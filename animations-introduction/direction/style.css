@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  animation-name: moving;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  /* 
+  normal: va de 0 a 100
+  reverse: va de 100 a 0
+  alternate: va de 0 a 100 y luego de 100 a 0
+  */
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(100px);
+  }
+  50% {
+    transform: translateX(800px);
+  }
+  100% {
+    transform: translate(800px, 500px);
+  }
+}

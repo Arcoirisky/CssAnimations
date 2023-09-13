@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  animation-name: moving;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  /* 
+  none: vuelve al original
+  forwards: se queda en el ultimo estado
+  backwards: empieza en el estado 0 de la animación y se queda en el original
+  both:  empieza en el estado 0 de la animación y se queda en el final
+  */
+  animation-delay: 3s;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(400px);
+  }
+  50% {
+    transform: translateX(800px);
+  }
+  100% {
+    transform: translate(800px, 500px);
+  }
+}

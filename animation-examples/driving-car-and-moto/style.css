@@ -1,0 +1,51 @@
+/* <a href="https://www.freepik.com/free-vector/city-at-night-and-day-illustration_829621.htm">Designed by Freepik</a> */
+
+/* https://www.freepik.com/free-vector/city-at-night-and-day-illustration_829621.htm */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  height: 100vh;
+  background: url("./bg.jpg");
+  background-position: bottom left;
+  background-size: cover;
+  animation: driving 15s linear infinite;
+}
+
+.car {
+  position: absolute;
+  left: 300px;
+  bottom: -50px;
+  width: 200px;
+  z-index: 1;
+}
+
+.motorbike {
+  position: absolute;
+  left: 100px;
+  bottom: 55px;
+  width: 150px;
+  animation: motodriving 5s linear infinite alternate;
+}
+
+@keyframes driving {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: bottom right;
+  }
+}
+
+@keyframes motodriving {
+  from {
+    left: 100px;
+  }
+  90%,
+  100% {
+    left: 600px;
+  }
+}

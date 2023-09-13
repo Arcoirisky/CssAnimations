@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2f2f2f;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  clip-path: polygon(49% 5%, 96% 33%, 100% 100%, 16% 46%);
+}
+
+/*
+Clippy
+This website is a great tool to create clip-path shapes
+https://bennettfeely.com/clippy/
+*/
